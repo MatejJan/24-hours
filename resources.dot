@@ -1,0 +1,119 @@
+digraph resources {
+  rankdir=LR
+  {rank=same sleep people emotions school computer travel}
+  {rank=same body mind work}
+
+  # Primitives
+
+  sleep->body
+
+  sleep->mind
+
+  sleep->work
+
+  # Sports
+
+  body->exercise
+
+  exercise->sport
+  play->sport
+
+  sport->athlete
+  work->athlete
+
+  # Games
+
+  friends->play
+  mind->play
+
+  computer->video_games
+  play->video_games
+
+  video_games->esports
+  work->esports
+
+  # Relationships
+
+  people->friends
+
+  friends->love
+  emotions->love
+
+  love->marriage
+  work->marriage
+
+  love->kids
+  people->kids
+
+  # Travel
+
+  travel->astronaut
+  science->astronaut
+
+  travel->driver
+  practice->driver
+
+  # Mind career
+
+  school->theory
+  mind->theory
+
+  theory->science
+  work->science
+
+  computer->programing
+  work->programing
+
+  # Body career
+
+  school->practice
+  body->practice
+
+  practice->service
+  work->service
+
+  service->doctor
+  theory->doctor
+
+  # Work career
+
+  school->business
+  work->business
+
+  business->startup
+  computer->startup
+
+  # Emotion career
+
+  emotions->art
+  work->art
+
+  emotions->dance
+  exercise->dance
+
+  art->acting
+  body->acting
+
+  emotions->music
+  play->music
+
+  music->band
+  friends->band
+
+  art->graphic_design
+  computer->graphic_design
+
+  emotions->therapy
+  theory->therapy
+
+  # People career
+
+  people->politics
+  theory->politics
+
+  people->social_media
+  computer->social_media
+
+  social_media->influencer
+  work->influencer
+}

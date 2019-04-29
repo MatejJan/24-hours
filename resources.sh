@@ -1,0 +1,1 @@
+dot -Tpng resources.dot -o resources.dot.png
